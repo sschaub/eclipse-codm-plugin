@@ -1,0 +1,28 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Codm Editor
+Bundle-SymbolicName: org.sschaub.codm;singleton:=true
+Bundle-Version: 1.0.0.0
+Bundle-Vendor: Stephen Schaub
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: org.eclipse.sapphire.modeling,
+ org.eclipse.sapphire.modeling.xml,
+ org.eclipse.sapphire.java,
+ org.eclipse.sapphire.ui,
+ org.eclipse.sapphire.ui.swt.xml.editor,
+ org.eclipse.sapphire.workspace,
+ org.eclipse.sapphire.workspace.ui,
+ org.eclipse.sapphire.osgi,
+ org.eclipse.core.runtime,
+ org.eclipse.core.resources,
+ org.eclipse.wst.sse.ui,
+ org.eclipse.wst.xml.ui,
+ org.eclipse.ui,
+ org.eclipse.ui.views,
+ org.eclipse.help,
+ org.eclipse.ui.views.properties.tabbed,
+ org.eclipse.ui.ide,
+ org.eclipse.core.filesystem,
+ org.eclipse.sapphire.ui.swt.gef,
+ org.eclipse.sapphire.platform
+Bundle-ActivationPolicy: lazy

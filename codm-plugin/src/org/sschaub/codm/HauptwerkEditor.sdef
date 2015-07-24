@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<definition>
+
+  <import>
+    <package>org.sschaub.codm</package>
+  </import>
+
+  <editor-page>
+    <id>DetailsPage</id>
+    <page-name>details</page-name>
+    <page-header-text>Hauptwerk CODM</page-header-text>
+    <root-node>
+      <node>
+        <label>Objects</label>
+        <node-factory>
+          <property>ObjectLists</property>
+          <case>
+            <label>${ ObjectType == null ? "&lt;object&gt;" : ObjectType }
+            </label>
+            <node-factory>
+              <property>ObjectItems</property>
+              <case>
+                <label>${ Name == null ? "&lt;name&gt;" : Name }</label>
+                <element-type>General</element-type>
+                <section>
+                  <label>General Settings</label>
+                  <content>
+                    <property-editor>UniqueOrganID</property-editor>
+                    <property-editor>Name</property-editor>
+                    <property-editor>ShortName</property-editor>
+                    <property-editor>OrganDefinitionFilenameExcludingExtension</property-editor>
+                    <property-editor>CurrentHauptwerkVersion</property-editor>
+
+                    <property-editor>SampleRateCode</property-editor>
+                     <separator>
+                        <label>Custom Display</label>
+                    </separator>                  
+                    
+                    <property-editor>CustomDisplayConsoleWidthPixels</property-editor>
+                    <property-editor>CustomDisplayConsoleHeightPixels</property-editor>
+                    <property-editor>CustomDisplayEnableStdPagesControls</property-editor>
+                    <property-editor>CustomDisplayEnableStdPagesKeyboards</property-editor>
+                    <property-editor>CustomDisplayEnableStdPagesEnclosures</property-editor>          
+                    <property-editor>CustomDisplayDefaultDisplayPageID</property-editor>
+                   
+                  </content>
+                </section>
+              </case>
+              <case>
+                <label>${ Name == null ? "&lt;name&gt;" : Name }</label>
+                <element-type>Rank</element-type>
+                <section>
+                  <label>rank</label>
+                  <content>
+                    <property-editor>RankID</property-editor>
+                    <property-editor>Name</property-editor>
+                    <property-editor>NumberOfPipes</property-editor>
+                    <property-editor>MIDINoteNumberOfFirstPipe</property-editor>
+                    <property-editor>IsPercussive</property-editor>
+                    <property-editor>Samples_InstallationPackageID</property-editor>
+                    <property-editor>Samples_MainSampleFileFolder</property-editor>
+                    <property-editor>Samples_ShortNoteReleaseSampleFileFolderIfAny</property-editor>
+                    <property-editor>Samples_MaxNoteTimeMsForShortNoteReleaseSamplesIfAny</property-editor>
+                    <property-editor>Samples_MediumNoteReleaseSampleFileFolderIfAny</property-editor>
+                    <property-editor>Samples_MaxNoteTimeMsForMediumNoteReleaseSamplesIfAny</property-editor>
+                    <property-editor>Position_LayoutOfPipesOnWindchestCode</property-editor>
+                    <property-editor>Position_RankDistanceFromListenerMetres</property-editor>
+                    <property-editor>WindSupply_DivisionCodeOfWindchest</property-editor>
+                    <property-editor>Amp_PipeMIDINoteNum036_LevelAdjustDecibels</property-editor>
+                    <property-editor>Amp_PipeMIDINoteNum096_LevelAdjustDecibels</property-editor>
+                    <property-editor>Pitch_MaxRandomTuningErrorHz</property-editor>
+                    <property-editor>Samples_RankBasePitch64ftHarmNumIfAssumedTunedToConcertPitch</property-editor>
+                    <property-editor>Pitch_RankBaseOutputPitch64ftHarmonicNum</property-editor>
+                    <property-editor>Pitch_PipeMIDINoteNum036_TuningAdjustPercentSemitones</property-editor>
+                    <property-editor>Pitch_PipeMIDINoteNum096_TuningAdjustPercentSemitones</property-editor>
+                    <property-editor>Encl_EnclosureCode</property-editor>
+
+
+                  </content>
+                </section>
+              </case>
+              <case>
+                <label>${ Name == null ? "&lt;name&gt;" : Name }</label>
+                <element-type>Stop</element-type>
+                <section>
+                  <label>stop</label>
+                  <content>
+                    <property-editor>StopCode</property-editor>
+                    <property-editor>Name</property-editor>
+                    <property-editor>DisplayName</property-editor>
+                    <property-editor>CustomDisplay1_DisplayPageID</property-editor>
+                    <property-editor>CustomDisplay1_Text</property-editor>
+                    <property-editor>CustomDisplay1_ControlStyleID</property-editor>
+                    <property-editor>CustomDisplay1_PosPixels_X</property-editor>
+                    <property-editor>CustomDisplay1_PosPixels_Y</property-editor>
+                    <property-editor>PercussiveEngagingSoundEffect_RankID</property-editor>
+                    <property-editor>PercussiveEngagingSoundEffect_MIDINoteNumber</property-editor>
+                    <property-editor>PercussiveDisengagingSoundEffect_RankID</property-editor>
+                    <property-editor>PercussiveDisengagingSoundEffect_MIDINoteNumber</property-editor>
+
+                  </content>
+                </section>
+              </case>
+              <case>
+                <label>${ Name == null ? "&lt;name&gt;" : Name }</label>
+                <element-type>StopRank</element-type>
+                <section>
+                  <label>stoprank</label>
+                  <content>
+                    <property-editor>Name</property-editor>
+                    <property-editor>StopCode</property-editor>
+                    <property-editor>RankTypeCode</property-editor>
+                    <property-editor>RankID</property-editor>
+                    <property-editor>MIDINoteNumIncrementFromDivisionToRank</property-editor>
+                    <property-editor>MIDINoteNumOfFirstMappedDivisionKey</property-editor>
+                    <property-editor>NumberOfMappedDivisionKeys</property-editor>
+                    <property-editor>StopCodeToSwitchToAlternateRank</property-editor>
+                    <property-editor>AlternateRankID</property-editor>
+                    <property-editor>RetriggerNotesWhenSwitchingBetweenNormalAndAlternateRanks</property-editor>
+
+                  </content>
+                </section>
+              </case>
+            </node-factory>
+          </case>
+
+
+        </node-factory>
+      </node>
+
+    </root-node>
+    <element-type>Hauptwerk</element-type>
+  </editor-page>
+
+</definition>

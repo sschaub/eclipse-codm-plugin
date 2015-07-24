@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.sschaub.codm"
+      label="Codm Feature"
+      version="1.0.0.0"
+      provider-name="Stephen Schaub">
+
+   <description url="http://www.example.com/description">
+      [Enter Feature Description here.]
+   </description>
+
+   <copyright url="http://www.example.com/copyright">
+      [Enter Copyright Description here.]
+   </copyright>
+
+   <license url="http://www.example.com/license">
+      [Enter License Description here.]
+   </license>
+
+   <requires>
+      <import plugin="org.eclipse.sapphire.modeling"/>
+      <import plugin="org.eclipse.sapphire.modeling.xml"/>
+      <import plugin="org.eclipse.sapphire.java"/>
+      <import plugin="org.eclipse.sapphire.ui"/>
+      <import plugin="org.eclipse.sapphire.ui.swt.xml.editor"/>
+      <import plugin="org.eclipse.sapphire.workspace"/>
+      <import plugin="org.eclipse.sapphire.workspace.ui"/>
+      <import plugin="org.eclipse.sapphire.osgi"/>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.eclipse.core.resources"/>
+      <import plugin="org.eclipse.wst.sse.ui"/>
+      <import plugin="org.eclipse.wst.xml.ui"/>
+      <import plugin="org.eclipse.ui"/>
+      <import plugin="org.eclipse.ui.views"/>
+      <import plugin="org.eclipse.help"/>
+      <import plugin="org.eclipse.ui.views.properties.tabbed"/>
+      <import plugin="org.eclipse.ui.ide"/>
+      <import plugin="org.eclipse.core.filesystem"/>
+      <import plugin="org.eclipse.sapphire.ui.swt.gef"/>
+      <import plugin="org.eclipse.sapphire.platform"/>
+   </requires>
+
+   <plugin
+         id="org.sschaub.codm"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>
